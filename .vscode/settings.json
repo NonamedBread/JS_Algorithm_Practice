@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2, // 탭 사이즈
+  "editor.formatOnSave": true, // 저장시 자동 포맷팅
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 기본 포맷터
+  "eslint.format.enable": true, // eslint 포맷팅 사용
+  // 절대경로 import
+  "javascript.preferences.importModuleSpecifier": "non-relative", // 절대경로 import
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit", // 저장시 자동으로 코드 수정
+    "source.organizeImports": "explicit" // 저장시 자동으로 import 정리
+  }
+}
