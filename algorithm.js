@@ -10,6 +10,15 @@ const input = []
 rl.on('line', line => {
   input.push(...line.split(' ').map(Number))
 }).on('close', () => {
-  const min = Math.min(...input)
-  console.log(min)
+  let max = -Infinity
+  let sum = 0
+
+  for (let num of input) {
+    if (num > max) max = num
+    sum += num
+  }
+
+  sum -= max
+
+  console.log(max > sum ? 'No' : 'Yes')
 })
